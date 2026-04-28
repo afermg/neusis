@@ -33,7 +33,6 @@
       fzf # fuzzy finder
       gawk # Main awk
       gemini-cli
-      gemini-cli
       git
       gnumake # Necessary for emacs' vterm
       gnumeric

@@ -3,7 +3,8 @@
   # Ollama service for local LLM inference
   services.ollama = {
     enable = true;
-    package = pkgs.ollama;
+    # package defaults to pkgs.ollama; bumped to unstable via
+    # ../common/ollama-overlay.nix
     acceleration = "cuda";
     environmentVariables = {
       CUDA_VISIBLE_DEVICES = "0";
