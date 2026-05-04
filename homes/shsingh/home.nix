@@ -102,6 +102,7 @@ in
         pre-commit
 
         # AI tools
+        pkgs.unstable.opencode
         # claude-code: Managed imperatively for frequent updates (sometimes hourly releases)
         #   Install: nix profile install github:sadjow/claude-code-nix
         #   Update:  nix profile upgrade claude-code-nix --refresh

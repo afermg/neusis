@@ -1,11 +1,11 @@
-{ ... }:
+{ pkgs, ... }:
 {
-  # Ollama service for local LLM inference
   services.ollama = {
     enable = true;
-    # package defaults to pkgs.ollama; bumped to unstable via
-    # ../common/ollama-overlay.nix
+    package = pkgs.unstable.ollama-cuda;
     acceleration = "cuda";
+    host = "127.0.0.1";
+    port = 11434;
   };
 
   # Optional: Open firewall port if you want to access ollama from other machines

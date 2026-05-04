@@ -19,8 +19,6 @@
     ./packages.nix
     ./services.nix
     ./ollama.nix
-    ../common/ollama-overlay.nix
-    ../common/opencode-overlay.nix
 
     # Deployment configs
     inputs.disko.nixosModules.disko

@@ -17,7 +17,7 @@
       cargo # rust packages
       clang # c language
       clang-tools # tools for c language
-      claude-code
+      pkgs.inputs.claude-code-nix.default
       cmake # c compiler
       devenv
       difftastic # better diffs
@@ -65,7 +65,7 @@
       nixfmt-rfc-style # Nix formatting (for nixpkgs)
       nixfmt-tree # Format entire directories of nix
       nodePackages.bash-language-server # bash
-      opencode
+      pkgs.unstable.opencode
       pandoc # Convert between formats
       parallel # GNU parallel
       pdftk
