@@ -114,6 +114,15 @@
 
     marimohub-nix.url = "github:afermg/marimohub-nix";
 
+    # Keep Oppy's Overleaf deployment byte-for-byte compatible with the
+    # archived Moby state snapshot. This is the exact nixpkgs revision used to
+    # build the source Overleaf, MongoDB, and Redis stack.
+    overleaf-runtime-nixpkgs.url = "github:NixOS/nixpkgs/241313f4e8e508cb9b13278c2b0fa25b9ca27163";
+    overleaf-nix = {
+      url = "github:afermg/overleaf-nix/290f07eb7b6e880e19d27e26dbea4da1033324a8";
+      inputs.nixpkgs.follows = "overleaf-runtime-nixpkgs";
+    };
+
     hardware.url = "github:nixos/nixos-hardware";
 
     jail-nix.url = "sourcehut:~alexdavid/jail.nix";
